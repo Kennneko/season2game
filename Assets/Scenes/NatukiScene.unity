@@ -507,11 +507,6 @@ Material:
     m_Colors:
     - _EdgeColor: {r: 0.4, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!95 &919132148382588158 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 919132148382588158, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
-  m_PrefabInstance: {fileID: 7831628657444823714}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7831628657444823714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -519,14 +514,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 765862796031058016, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 919132148382588158}
-    - target: {fileID: 919132148382588158, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a2a186d748968474083024858de0c97b, type: 2}
     - target: {fileID: 919132148382588160, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
       propertyPath: nextEdgeMaterial_Pass4
       value: 

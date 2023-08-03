@@ -338,6 +338,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &535020784 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 919132148382588158, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
+  m_PrefabInstance: {fileID: 7831628657444823714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1679623283
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +519,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 546523642, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 546523642, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
+      propertyPath: m_Size.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 546523643, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 765862796031058016, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 765862796031058016, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 535020784}
+    - target: {fileID: 765862796031058016, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
+      propertyPath: walkSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132148382588160, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
       propertyPath: nextEdgeMaterial_Pass4
       value: 
@@ -536,7 +565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720631802616390885, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.483
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7720631802616390885, guid: 517d925d747e7a6429de3f65ab67bc2b, type: 3}
       propertyPath: m_LocalPosition.z

@@ -4439,7 +4439,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7720631802616390885}
   - component: {fileID: 919132148382588160}
-  - component: {fileID: 919132148382588159}
   - component: {fileID: 919132148382588158}
   m_Layer: 0
   m_Name: SasakiSugar
@@ -4606,22 +4605,6 @@ MonoBehaviour:
   editorViewMorphBits: 15
   editorViewRigidBodies: 0
   editorViewMorphNameType: 0
---- !u!54 &919132148382588159
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6948738753749384799}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
 --- !u!95 &919132148382588158
 Animator:
   serializedVersion: 4
@@ -4844,9 +4827,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7354216438394700541}
-  - component: {fileID: 765862796031058017}
   - component: {fileID: 765862796031058016}
   - component: {fileID: 7944342195362391262}
+  - component: {fileID: 546523643}
+  - component: {fileID: 546523642}
   m_Layer: 0
   m_Name: 111.!Root
   m_TagString: Untagged
@@ -4871,24 +4855,6 @@ Transform:
   m_Father: {fileID: 7720631802616390885}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &765862796031058017
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7860989136267807358}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 1.5
-  m_Radius: 0.3
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!114 &765862796031058016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4901,8 +4867,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2862a09a959eb4795ec4c7cf787726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1
-  animator: {fileID: 919132148382588158}
+  speedMagnification: 5
+  rb: {fileID: 0}
+  movingVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &7944342195362391262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4915,10 +4882,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482af93b30da7a048816a8ecabda762d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  model: {fileID: 0}
-  boneID: -1
+  model: {fileID: 919132148382588160}
+  boneID: 111
   ikEnabled: 0
   ikWeight: 1
+--- !u!54 &546523643
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860989136267807358}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!65 &546523642
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860989136267807358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.6, z: 1}
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1 &7932742252227106234
 GameObject:
   m_ObjectHideFlags: 0

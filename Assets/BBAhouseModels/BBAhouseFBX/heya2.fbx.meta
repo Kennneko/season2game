@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 794954af37751294ba700d438faa07cc
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: domatoko_mat_genkansuteeji
+    second: {fileID: 2100000, guid: b64f635f7fddb4b4eb4ab00f38c95176, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: enseki_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 94558442cc292c54b9b839e6efd3c41d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fumiishi_mat_genkansuteeji
+    second: {fileID: 2100000, guid: d2a20a2cef5a89a4c86712eeae2bddc1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gaiheki1_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 15030318a31833b4e8e2ddc4c93fcdd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gaiheki2_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 4b023619f0a21564387c3914449b4cc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: genkanjari_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 3930ca887e0d1734193d99339fa1d84b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: genkankabebashira_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 84bf77901d67b23458914a1dfaa8e933, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: genkanmado_mat_genkansuteeji
+    second: {fileID: 2100000, guid: eb923821af63aff4f82796c9069af222, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: genkanshichuusoto_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 86dfe6ea961dc3041a3ed436a4d1e439, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: genkanyane_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 258b9889f71f93645915a7442b7ec855, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: genkanyanesasae1_mat_genkansuteeji
+    second: {fileID: 2100000, guid: c2100ec3bf80ddd46b5697b802cdb4c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: genkanyanesasae2_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 1274c8ed2525ef745a4736f9caffdd2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hekinaigawa_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 2ea67d7af9528ae4086550d11478debd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kabebashira_mat_genkansuteeji
+    second: {fileID: 2100000, guid: d2f2445ecb80d5142b6999418b41a114, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kabezentai_mat_genkansuteeji
+    second: {fileID: 2100000, guid: d792828859a76994490cfa1084f984fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shouji1_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 998ee6ef7b006a944980798a01612d4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shouji2_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 4eca56528bf4f8c4a9367aaf4b2c5f7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tenjou_mat_genkansuteeji
+    second: {fileID: 2100000, guid: 68e5f1e7a3e79ac41819f6f259a29d05, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DF1
+    second: {fileID: 2800000, guid: 125d1299097307447936def5d47c7d3a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DF3
+    second: {fileID: 2800000, guid: 98dc4814f510f7a4b9090c4497ba6dbb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DF5
+    second: {fileID: 2800000, guid: de9be23ecd22ade45b6f614b4782b7b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FLW1
+    second: {fileID: 2800000, guid: ebe2fa151c265654c839cffb295c8dd7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FLW2
+    second: {fileID: 2800000, guid: b19101dae6475d94a95f23d4b44ba4ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SJ1
+    second: {fileID: 2800000, guid: a86ac829fc0a0964c8d1d3998b492aa6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SS1
+    second: {fileID: 2800000, guid: 17cd3f929f77a5b4c8a8a2983e3e941c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ST1
+    second: {fileID: 2800000, guid: 017d37aa26f8f1e459b7b46692631bde, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WW1
+    second: {fileID: 2800000, guid: 0fe2498895a58784fb2798e81f4dd0d4, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,69 +4,68 @@ using UnityEngine;
 
 public class ObaMoveNat : MonoBehaviour
 {
-	private CharacterController characterController;
-	private Vector3 velocity;
 	public float walkSpeed;
 	public Animator animator;
+	Vector3 movingDirecion;
+	public Rigidbody rb;
+	public Vector3 movingVelocity;
 
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		characterController = GetComponent<CharacterController>();
+		rb = GetComponent<Rigidbody>();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
+		float x = Input.GetAxisRaw("Horizontal");
+		float z = Input.GetAxisRaw("Vertical");
+		movingDirecion = new Vector3(x, 0, z);
+		movingDirecion.Normalize();//ŽÎ‚ß‚Ì‹——£‚ª’·‚­‚È‚é‚Ì‚ð–h‚¬‚Ü‚·
+		movingVelocity = movingDirecion * walkSpeed;
 
-		/*if (characterController.isGrounded)
+		if(movingDirecion.z >= 0.5)
 		{
-			velocity = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-
-			if (velocity.magnitude > 0.1f)
+			walkSpeed = 1;
+			animator.SetFloat("Speed", movingVelocity.magnitude);
+			if (Input.GetKey(KeyCode.LeftShift))
 			{
-				walkSpeed = 0.5f;
-				animator.SetFloat("Tired", velocity.magnitude);
-                if (Input.GetKey(KeyCode.LeftShift))
-                {
-					animator.SetFloat("Tired", 1.5f);
-					walkSpeed = 1.5F;
-				}
-			}
-			else
-			{
-				animator.SetFloat("Tired", 0f);
+				animator.SetFloat("Speed", 1.5f);
+				walkSpeed = 1.5F;
 			}
 		}
-		velocity.y += Physics.gravity.y * Time.deltaTime;
-		characterController.Move(velocity * walkSpeed * Time.deltaTime);*/
 
-		if (characterController.isGrounded)
+		if (movingDirecion.z <= -0.5)
 		{
-			velocity = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+			walkSpeed = 0.5f;
+			animator.SetFloat("Speed", -1f);
+		}
 
-			if (velocity.magnitude > 0.1f)
+		if (movingDirecion.z == 0)
+		{
+			animator.SetFloat("Speed", 0f);
+		}
+
+		/*if(movingDirecion.z >= 0.5)
+		{
+			walkSpeed = 0.5;
+			animator.SetFloat("Tired", movingVelocity.magnitude);
+			if (Input.GetKey(KeyCode.LeftShift))
 			{
-				walkSpeed = 1;
-				animator.SetFloat("Speed", velocity.magnitude);
-				if (Input.GetKey(KeyCode.LeftShift))
-				{
-					animator.SetFloat("Speed", 1.5f);
-					walkSpeed = 3;
-				}
-			}
-			else if (velocity.magnitude >= -0.1f)
-			{
-				walkSpeed = 1;
-				animator.SetFloat("Speed", -1);
-			}
-			else
-			{
-				animator.SetFloat("Speed", 0f);
+				animator.SetFloat("Tired", 1.5f);
+				walkSpeed = 1F;
 			}
 		}
-		velocity.y += Physics.gravity.y * Time.deltaTime;
-		characterController.Move(velocity * walkSpeed * Time.deltaTime);
+		else
+		{
+			animator.SetFloat("Tired", 0f);
+		}*/
+	}
+
+	void FixedUpdate()
+	{
+		rb.velocity = new Vector3(movingVelocity.x, 0, movingVelocity.z);
 	}
 }

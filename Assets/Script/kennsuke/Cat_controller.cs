@@ -30,9 +30,15 @@ public class Cat_controller : MonoBehaviour
     //[SerializeField]
     //Transform target;
     private Rigidbody rb;
-    public float speed=1;
+    public int speed=1;
     public float number = 100f;
     public float JumpPower = 1000f;
+   
+    private void pounce()
+    {
+        transform.Translate(0, 0, 0.5f);
+        rb.AddForce(0, -1000, 0);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -42,10 +48,11 @@ public class Cat_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         
         // Get the movement vector
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-
+        
         // Normalize the movement vector
         movement.Normalize();
 
@@ -57,7 +64,7 @@ public class Cat_controller : MonoBehaviour
             // Apply the rotation to the character's transform
             transform.rotation = targetRotation;
         }
-
+        
         // Apply movement to the character's rigidbody
         rb.velocity = movement * speed;
 
@@ -89,6 +96,13 @@ public class Cat_controller : MonoBehaviour
             if (Input.GetKeyDown("joystick button 4") && (Input.GetKeyDown("joystick button 0")))
             {
                 animator.SetTrigger(" pounce");
+                Invoke("pounce", 0.3f);
+                //transform.Translate(0, 0, 1);
+                /*Rigidbody rb = this.GetComponent<Rigidbody>();  // rigidbodyÇéÊìæ
+                Vector3 force = new Vector3(0.0f, 0.0f, 1000.0f);    // óÕÇê›íË
+                rb.AddForce(force);  // óÕÇâ¡Ç¶ÇÈ*/
+                //rb.AddForce(0,0,1000);  // óÕÇâ¡Ç¶ÇÈ
+
                 //Debug.Log("aa");
             }
             /* animator.SetBool("L1_speed",true);

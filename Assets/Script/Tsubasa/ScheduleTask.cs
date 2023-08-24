@@ -56,7 +56,13 @@ public class ScheduleTask : MonoBehaviour
 
             task.TaskMes(true, csvDatas[gameTimer][1]);
             taskLog.Add(csvDatas[gameTimer][1]);
+            StartCoroutine(FailureTask());
             //textUI.text = csvDatas[gameTimer][0] + "F" + csvDatas[gameTimer][1] + "F" + csvDatas[gameTimer][2];
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            RemoveList(true,0);
         }
     }
     public void RemoveList(bool remove , int taskNum)
@@ -64,6 +70,16 @@ public class ScheduleTask : MonoBehaviour
         if (remove)
         {
             taskLog.RemoveAt(taskNum);
+        }
+    }
+    IEnumerator FailureTask()
+    {
+        yield return new WaitForSeconds(120);
+
+        if (taskLog.Count > 4)
+        {
+            taskLog.RemoveAt(0);
+
         }
     }
 }
